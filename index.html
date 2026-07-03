@@ -3,239 +3,300 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reparaciones Donal & Eder Lab | Centro de Reparaciones Profesional</title>
+    <title>Reparaciones Donaldo & Eder | Soporte Técnico de Alta Gama</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Animación de pulso futurista para el fondo y acentos */
+        @keyframes glow {
+            0%, 100% { opacity: 0.2; }
+            50% { opacity: 0.5; }
+        }
+        .glow-bg {
+            position: absolute;
+            background: radial-gradient(circle, rgba(6,182,212,0.15) 0%, rgba(147,51,234,0.05) 50%, rgba(0,0,0,0) 100%);
+            filter: blur(60px);
+            animation: glow 8s infinite ease-in-out;
+        }
+    </style>
 </head>
-<body class="bg-[#000000] text-zinc-200 antialiased selection:bg-white selection:text-black">
+<body class="bg-[#000000] text-slate-100 antialiased selection:bg-cyan-500 selection:text-black font-sans relative overflow-x-hidden">
 
-    <!-- NAVBAR MINIMALISTA -->
-    <header class="sticky top-0 z-50 bg-[#000000]/95 border-b border-zinc-900 backdrop-blur-md">
+    <!-- Efecto de luces de fondo futuristas -->
+    <div class="glow-bg w-[500px] h-[500px] top-[-100px] left-[-100px] pointer-events-none"></div>
+    <div class="glow-bg w-[600px] h-[600px] top-[40%] right-[-200px] pointer-events-none" style="animation-delay: 4s;"></div>
+
+    <!-- NAVBAR FUTURISTA -->
+    <header class="sticky top-0 z-50 bg-[#000000]/80 border-b border-cyan-950/40 backdrop-blur-xl">
         <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
             <div class="flex items-center gap-2">
-                <span class="text-lg font-black tracking-widest text-white uppercase">Reparaciones Donal & Eder Lab<span class="text-zinc-500 font-light">LAB</span></span>
+                <span class="text-lg font-black tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 uppercase">
+                    DONALDO & EDER<span class="text-slate-400 font-light text-sm block md:inline md:ml-2 tracking-normal font-sans">REPARACIONES</span>
+                </span>
             </div>
-            <nav class="hidden md:flex items-center gap-8 text-[11px] font-bold tracking-widest uppercase text-zinc-400">
-                <a href="#marcas" class="hover:text-white transition-colors">Compatibilidad</a>
-                <a href="#equipos" class="hover:text-white transition-colors">Dispositivos</a>
-                <a href="#calculadora" class="hover:text-white transition-colors">Cotizar</a>
-                <a href="#reportar" class="hover:text-white transition-colors">Soporte Técnico</a>
+            <nav class="hidden lg:flex items-center gap-8 text-[11px] font-bold tracking-[0.2em] uppercase text-slate-400">
+                <a href="#inicio" class="hover:text-cyan-400 transition-colors">Inicio</a>
+                <a href="#equipos" class="hover:text-cyan-400 transition-colors">Soporte</a>
+                <a href="#calculadora" class="hover:text-cyan-400 transition-colors">Cotizador</a>
+                <a href="#reportar" class="hover:text-cyan-400 transition-colors">Soporte Técnico</a>
             </nav>
-            <a href="https://wa.me/18297512496" target="_blank" class="bg-white hover:bg-zinc-200 text-black px-5 py-2.5 text-[11px] font-bold uppercase tracking-widest transition">
-                Contacto Directo
+            <a href="https://wa.me/18297512496" target="_blank" class="relative group overflow-hidden bg-gradient-to-r from-cyan-500 to-blue-600 text-black px-5 py-2.5 text-[11px] font-bold uppercase tracking-widest transition rounded">
+                <span class="relative z-10 text-white flex items-center gap-1">CONTACTO DIRECTO</span>
+                <span class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity"></span>
             </a>
         </div>
     </header>
 
-    <!-- HERO SECTION (Estilo Premium / Limpio) -->
-    <section class="py-24 max-w-6xl mx-auto px-6 space-y-8 text-center md:text-left">
-        <h1 class="text-4xl sm:text-7xl font-extrabold text-white tracking-tighter leading-none uppercase">
-            Reparación avanzada <br class="hidden md:block"> de móviles y portátiles.
-        </h1>
-        <p class="text-zinc-400 text-lg max-w-2xl leading-relaxed font-light">
-            Especialistas en microsoldadura electrónica, reconstrucción de circuitos en placa base y diagnóstico de fallas complejas para smartphones y laptops de alta gama.
-        </p>
-        <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <a href="#reportar" class="bg-white hover:bg-zinc-200 text-black px-8 py-4 font-bold uppercase text-[11px] tracking-widest transition text-center">
-                Iniciar Orden de Falla
-            </a>
-            <a href="#calculadora" class="bg-transparent border border-zinc-800 hover:border-zinc-500 text-white px-8 py-4 font-bold uppercase text-[11px] tracking-widest transition text-center">
-                Calcular Costo Base
-            </a>
+    <!-- SECCIÓN DE INTRODUCCIÓN PRINCIPAL (¿De qué trata y Especialidad?) -->
+    <section id="inicio" class="relative py-24 max-w-6xl mx-auto px-6 text-center md:text-left grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+        <div class="md:col-span-8 space-y-6">
+            <!-- Etiqueta de Identidad -->
+            <div class="inline-flex items-center gap-2 px-3 py-1 bg-cyan-950/40 border border-cyan-800/50 rounded-full backdrop-blur-sm">
+                <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                <span class="text-[10px] font-mono tracking-widest text-cyan-400 uppercase">SOPORTE TÉCNICO MULTIDISPOSITIVO</span>
+            </div>
+            
+            <!-- Declaración de qué trata la página -->
+            <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-none uppercase">
+                Solución Absoluta en <br>
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500">Cualquier Dispositivo</span>
+            </h1>
+            
+            <!-- Declaración de Especialidad Ampliada -->
+            <p class="text-slate-400 text-lg max-w-2xl leading-relaxed font-light">
+                Esta es nuestra plataforma oficial de asistencia donde podrás cotizar averías y generar tickets de soporte al instante. Nos especializamos en la reparación integral de <strong class="text-white font-semibold">Teléfonos (iPhone y Android), Tablets, Computadoras de Escritorio (PC) y Laptops</strong> de todo tipo. Desde fallas de software hasta microsoldadura avanzada en placas base.
+            </p>
+            
+            <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <a href="#reportar" class="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white px-8 py-4 font-bold uppercase text-[11px] tracking-widest transition shadow-[0_0_20px_rgba(34,211,238,0.2)] text-center rounded">
+                    Abrir Ticket de Falla
+                </a>
+                <a href="#calculadora" class="bg-[#0c0c12]/60 border border-slate-800 hover:border-cyan-500/50 text-slate-300 px-8 py-4 font-bold uppercase text-[11px] tracking-widest transition text-center backdrop-blur-md rounded">
+                    Calcular Costo Base
+                </a>
+            </div>
+        </div>
+
+        <!-- Panel Lateral Informativo Estilo Cyberpunk -->
+        <div class="md:col-span-4 bg-[#09090e]/60 border border-cyan-950/40 p-6 rounded-xl backdrop-blur-md relative hidden md:block">
+            <div class="absolute top-0 right-0 transform translate-x-1 -translate-y-1 text-cyan-500/20 font-mono text-xs font-bold tracking-widest">LAB_V2</div>
+            <h3 class="text-xs font-mono font-bold tracking-widest text-cyan-400 uppercase mb-4">// COBERTURA COMPLETA</h3>
+            <ul class="space-y-3 font-mono text-[11px] text-slate-400">
+                <li class="flex items-center gap-2"><span class="text-cyan-400">■</span> Smartphones (iOS & Android)</li>
+                <li class="flex items-center gap-2"><span class="text-blue-400">■</span> Laptops (Dell, HP, Lenovo, Mac)</li>
+                <li class="flex items-center gap-2"><span class="text-purple-400">■</span> PCs de Escritorio & Gaming</li>
+                <li class="flex items-center gap-2"><span class="text-cyan-400">■</span> Tablets & iPads de toda gama</li>
+            </ul>
         </div>
     </section>
 
-    <!-- SECCIÓN: CATÁLOGO DE MARCAS ADMITIDAS (Logos SVG Reales Vectorizados) -->
-    <section id="marcas" class="py-16 bg-zinc-950 border-y border-zinc-900">
+    <!-- SECCIÓN: COMPATIBILIDAD AVANZADA (Logos de Marcas con Toque Cyber) -->
+    <section id="marcas" class="py-12 bg-[#050508]/60 border-y border-cyan-950/30 backdrop-blur-sm">
         <div class="max-w-6xl mx-auto px-6">
-            <p class="text-[10px] font-bold uppercase text-zinc-600 tracking-widest text-center mb-10">Soporte Técnico Especializado Multimarca</p>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-10 items-center justify-items-center opacity-70">
-                <!-- Apple / iPhone Logo Real -->
-                <div class="flex flex-col items-center gap-3">
-                    <svg class="h-7 w-7 fill-current text-white" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-.96.04-2.13.64-2.82 1.45-.6.7-1.13 1.84-.99 2.94 1.07.08 2.16-.52 2.82-1.33z"/></svg>
-                    <span class="text-[9px] uppercase font-bold tracking-widest text-zinc-500">Apple iPhone</span>
+            <p class="text-[10px] font-mono font-bold uppercase text-slate-500 tracking-[0.3em] text-center mb-8">SOPORTE MULTIMARCA GARANTIZADO POR NUESTRO TALLER</p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-10 items-center justify-items-center opacity-60">
+                <div class="flex flex-col items-center gap-2 group hover:opacity-100 transition-opacity">
+                    <svg class="h-6 w-6 fill-current text-cyan-400" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-.96.04-2.13.64-2.82 1.45-.6.7-1.13 1.84-.99 2.94 1.07.08 2.16-.52 2.82-1.33z"/></svg>
+                    <span class="text-[9px] font-mono tracking-widest text-slate-500 group-hover:text-cyan-400 transition-colors">Apple iPhone</span>
                 </div>
-                <!-- Samsung Logo Real -->
-                <div class="flex flex-col items-center gap-3">
-                    <svg class="h-5 w-16 fill-current text-white" viewBox="0 0 24 24"><path d="M0 10.111c0-1.89 4.316-3.444 11.238-3.444 7.234 0 12.762 1.554 12.762 3.444 0 2.112-5.528 3.445-12.762 3.445C4.316 13.556 0 12.223 0 10.111zm1.614.15c0 .35 1.531.748 4.675.992l.245-.968c-.684-.047-1.287-.09-1.722-.143l-.117-.014-.143.085c-.534.303-.79.57-.79.761l-.001.036zm5.666 1.058c1.378.077 2.767.111 4.128.111 1.21 0 2.404-.025 3.593-.081l.142-.871c-1.127.047-2.315.069-3.535.069-1.314 0-2.673-.028-4.004-.09l-.161.884-.163-.002zm8.562-.128c1.32-.089 2.502-.218 3.456-.376l.118-.732c-.896.136-2.03.252-3.308.337l-.113.738-.153.033z"/></svg>
-                    <span class="text-[9px] uppercase font-bold tracking-widest text-zinc-500">Samsung Galaxy</span>
+                <div class="flex flex-col items-center gap-2 group hover:opacity-100 transition-opacity">
+                    <svg class="h-4 w-14 fill-current text-blue-500" viewBox="0 0 24 24"><path d="M0 10.111c0-1.89 4.316-3.444 11.238-3.444 7.234 0 12.762 1.554 12.762 3.444 0 2.112-5.528 3.445-12.762 3.445C4.316 13.556 0 12.223 0 10.111zm1.614.15c0 .35 1.531.748 4.675.992l.245-.968c-.684-.047-1.287-.09-1.722-.143l-.117-.014-.143.085c-.534.303-.79.57-.79.761l-.001.036zm5.666 1.058c1.378.077 2.767.111 4.128.111 1.21 0 2.404-.025 3.593-.081l.142-.871c-1.127.047-2.315.069-3.535.069-1.314 0-2.673-.028-4.004-.09l-.161.884-.163-.002zm8.562-.128c1.32-.089 2.502-.218 3.456-.376l.118-.732c-.896.136-2.03.252-3.308.337l-.113.738-.153.033z"/></svg>
+                    <span class="text-[9px] font-mono tracking-widest text-slate-500 group-hover:text-blue-500 transition-colors">Samsung Android</span>
                 </div>
-                <!-- Honor Logo Style -->
-                <div class="flex flex-col items-center gap-3">
-                    <span class="text-sm font-bold tracking-[0.2em] text-white">HONOR</span>
-                    <span class="text-[9px] uppercase font-bold tracking-widest text-zinc-500">Honor Series</span>
+                <div class="flex flex-col items-center justify-center group hover:opacity-100 transition-opacity">
+                    <span class="text-xs font-bold tracking-[0.2em] text-purple-400">HONOR</span>
+                    <span class="text-[9px] font-mono tracking-widest text-slate-500 mt-1">Dispositivos</span>
                 </div>
-                <!-- Dell Logo Real Style -->
-                <div class="flex flex-col items-center gap-3">
-                    <span class="text-xs font-mono font-black tracking-tighter text-white border border-zinc-700 px-2.5 py-0.5 rounded-full">DELL</span>
-                    <span class="text-[9px] uppercase font-bold tracking-widest text-zinc-500">Dell Latitude</span>
+                <div class="flex flex-col items-center justify-center group hover:opacity-100 transition-opacity">
+                    <span class="text-xs font-mono font-black text-cyan-400 border border-cyan-900 px-2 py-0.5 rounded">DELL</span>
+                    <span class="text-[9px] font-mono tracking-widest text-slate-500 mt-1">Sistemas PC</span>
                 </div>
-                <!-- HP Logo Style -->
-                <div class="flex flex-col items-center gap-3">
-                    <span class="text-xl font-serif italic font-extrabold tracking-tighter text-white">hp</span>
-                    <span class="text-[9px] uppercase font-bold tracking-widest text-zinc-500">HP Pavilion</span>
+                <div class="flex flex-col items-center justify-center group hover:opacity-100 transition-opacity">
+                    <span class="text-base font-serif italic font-black text-white">hp</span>
+                    <span class="text-[9px] font-mono tracking-widest text-slate-500 mt-0.5">Portátiles</span>
                 </div>
-                <!-- Lenovo Logo Real Style -->
-                <div class="flex flex-col items-center gap-2">
-                    <span class="text-[10px] bg-white text-black px-2 py-0.5 font-black tracking-widest">LENOVO</span>
-                    <span class="text-[9px] uppercase font-bold tracking-widest text-zinc-500">Lenovo ThinkPad</span>
+                <div class="flex flex-col items-center justify-center group hover:opacity-100 transition-opacity">
+                    <span class="text-[10px] bg-cyan-950 border border-cyan-800 text-cyan-400 px-2 py-0.5 font-mono font-bold tracking-wider">LENOVO</span>
+                    <span class="text-[9px] font-mono tracking-widest text-slate-500 mt-1">Computadoras</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- GALERÍA DE DISPOSITIVOS REPARABLES (Enlaces Web Directos Actualizados) -->
+    <!-- GALERÍA DE DISPOSITIVOS ADMITIDOS -->
     <section id="equipos" class="py-24 max-w-6xl mx-auto px-6">
-        <div class="mb-12">
-            <p class="text-[10px] font-mono uppercase text-zinc-500 tracking-widest">// COBERTURA COMPLETA</p>
-            <h2 class="text-2xl font-extrabold uppercase tracking-tight text-white mt-1">Dispositivos y Equipos Soportados</h2>
+        <div class="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-4">
+            <div>
+                <p class="text-[10px] font-mono uppercase text-cyan-400 tracking-widest">// REPARACIÓN INTEGRAL SIN RESTRICCIONES</p>
+                <h2 class="text-3xl font-black uppercase tracking-tight text-white mt-1">Equipos Cubiertos por Nuestro Taller</h2>
+            </div>
+            <div class="h-px bg-gradient-to-r from-cyan-950 to-transparent flex-1 mx-4 hidden md:block"></div>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Bloque 1: iPhone -->
-            <div class="bg-zinc-950 border border-zinc-900 p-4 group hover:border-zinc-700 transition-colors">
-                <div class="h-64 w-full overflow-hidden flex items-center justify-center bg-zinc-900 mb-4">
-                    <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?auto=format&fit=crop&w=600&q=80" alt="Apple iPhone" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <!-- Tarjeta 1: iPhone -->
+            <div class="bg-[#08080c]/60 border border-slate-900 rounded-xl p-4 group hover:border-cyan-500/40 transition-all duration-300 relative overflow-hidden backdrop-blur-md">
+                <div class="h-64 w-full overflow-hidden flex items-center justify-center bg-[#0d0d14] mb-4 rounded-lg relative">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#000000] via-cyan-950/10 to-transparent z-10 opacity-60"></div>
+                    <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?auto=format&fit=crop&w=600&q=80" alt="Apple iPhone" class="w-full h-full object-cover opacity-75 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 filter grayscale group-hover:grayscale-0">
                 </div>
-                <h3 class="text-sm font-bold uppercase text-white tracking-wider">Línea Apple iPhone</h3>
-                <p class="text-xs text-zinc-500 mt-1">Cambio de módulos de pantalla, reconstrucción del puerto de carga, celdas de batería e integrados SMD.</p>
+                <h3 class="text-sm font-bold uppercase text-white tracking-wider flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 bg-cyan-400 rounded-full"></span> Smartphones iPhone
+                </h3>
+                <p class="text-xs text-slate-400 mt-2 leading-relaxed">Soporte avanzado para toda la línea Apple. Cambios de pantallas, baterías, restauración de FaceID y microsoldadura de circuitos integrados.</p>
             </div>
 
-            <!-- Bloque 2: Samsung -->
-            <div class="bg-zinc-950 border border-zinc-900 p-4 group hover:border-zinc-700 transition-colors">
-                <div class="h-64 w-full overflow-hidden flex items-center justify-center bg-zinc-900 mb-4">
-                    <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=600&q=80" alt="Samsung Galaxy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <!-- Tarjeta 2: Android -->
+            <div class="bg-[#08080c]/60 border border-slate-900 rounded-xl p-4 group hover:border-blue-500/40 transition-all duration-300 relative overflow-hidden backdrop-blur-md">
+                <div class="h-64 w-full overflow-hidden flex items-center justify-center bg-[#0d0d14] mb-4 rounded-lg relative">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#000000] via-blue-950/10 to-transparent z-10 opacity-60"></div>
+                    <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=600&q=80" alt="Samsung Galaxy" class="w-full h-full object-cover opacity-75 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 filter grayscale group-hover:grayscale-0">
                 </div>
-                <h3 class="text-sm font-bold uppercase text-white tracking-wider">Samsung Galaxy Ultra / Note</h3>
-                <p class="text-xs text-zinc-500 mt-1">Reemplazo de cristales curvos AMOLED, reparación de módulos de cámaras traseras y sensor S-Pen.</p>
+                <h3 class="text-sm font-bold uppercase text-white tracking-wider flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 bg-blue-500 rounded-full"></span> Dispositivos Android
+                </h3>
+                <p class="text-xs text-slate-400 mt-2 leading-relaxed">Reparación para marcas como Samsung, Honor, Xiaomi y más. Soluciones a puertos de carga dañado, pantallas rotas y bloqueos de software.</p>
             </div>
 
-            <!-- Bloque 3: Honor -->
-            <div class="bg-zinc-950 border border-zinc-900 p-4 group hover:border-zinc-700 transition-colors">
-                <div class="h-64 w-full overflow-hidden flex items-center justify-center bg-zinc-900 mb-4">
-                    <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=80" alt="Honor SmartPhone" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <!-- Tarjeta 3: Tablets -->
+            <div class="bg-[#08080c]/60 border border-slate-900 rounded-xl p-4 group hover:border-purple-500/40 transition-all duration-300 relative overflow-hidden backdrop-blur-md">
+                <div class="h-64 w-full overflow-hidden flex items-center justify-center bg-[#0d0d14] mb-4 rounded-lg relative">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#000000] via-purple-950/10 to-transparent z-10 opacity-60"></div>
+                    <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=600&q=80" alt="Tablets" class="w-full h-full object-cover opacity-75 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 filter grayscale group-hover:grayscale-0">
                 </div>
-                <h3 class="text-sm font-bold uppercase text-white tracking-wider">Ecosistema Móvil Honor</h3>
-                <p class="text-xs text-zinc-500 mt-1">Solución de brickeos por software, cambios de tapas traseras rotas y flex de encendido.</p>
+                <h3 class="text-sm font-bold uppercase text-white tracking-wider flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 bg-purple-500 rounded-full"></span> Tablets e iPads
+                </h3>
+                <p class="text-xs text-slate-400 mt-2 leading-relaxed">Cambio de cristales táctiles, pantallas internas LCD, reparación de cortocircuitos por sobrecarga y reemplazo de pines de carga.</p>
             </div>
 
-            <!-- Bloque 4: Dell -->
-            <div class="bg-zinc-950 border border-zinc-900 p-4 group hover:border-zinc-700 transition-colors">
-                <div class="h-64 w-full overflow-hidden flex items-center justify-center bg-zinc-900 mb-4">
-                    <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=600&q=80" alt="Dell Laptop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <!-- Tarjeta 4: Computadoras de Escritorio (PC) -->
+            <div class="bg-[#08080c]/60 border border-slate-900 rounded-xl p-4 group hover:border-cyan-500/40 transition-all duration-300 relative overflow-hidden backdrop-blur-md">
+                <div class="h-64 w-full overflow-hidden flex items-center justify-center bg-[#0d0d14] mb-4 rounded-lg relative">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#000000] via-cyan-950/10 to-transparent z-10 opacity-60"></div>
+                    <img src="https://images.unsplash.com/photo-1587831990711-23ca6441447b?auto=format&fit=crop&w=600&q=80" alt="PC de Escritorio" class="w-full h-full object-cover opacity-75 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 filter grayscale group-hover:grayscale-0">
                 </div>
-                <h3 class="text-sm font-bold uppercase text-white tracking-wider">Laptops Dell & Corporativos</h3>
-                <p class="text-xs text-zinc-500 mt-1">Remoción de cortocorticuitos en rieles de 19V, flasheo externo de BIOS y pantallas de laptops.</p>
+                <h3 class="text-sm font-bold uppercase text-white tracking-wider flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 bg-cyan-400 rounded-full"></span> Computadoras de Escritorio (PC)
+                </h3>
+                <p class="text-xs text-slate-400 mt-2 leading-relaxed">Diagnóstico y armado de PCs (Oficina/Gaming). Reemplazo de fuentes de poder quemadas, tarjetas madre, procesadores y optimización del sistema.</p>
             </div>
 
-            <!-- Bloque 5: HP -->
-            <div class="bg-zinc-950 border border-zinc-900 p-4 group hover:border-zinc-700 transition-colors">
-                <div class="h-64 w-full overflow-hidden flex items-center justify-center bg-zinc-900 mb-4">
-                    <img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=600&q=80" alt="HP EliteBook" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <!-- Tarjeta 5: Laptops corporativas -->
+            <div class="bg-[#08080c]/60 border border-slate-900 rounded-xl p-4 group hover:border-blue-500/40 transition-all duration-300 relative overflow-hidden backdrop-blur-md">
+                <div class="h-64 w-full overflow-hidden flex items-center justify-center bg-[#0d0d14] mb-4 rounded-lg relative">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#000000] via-blue-950/10 to-transparent z-10 opacity-60"></div>
+                    <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=600&q=80" alt="Dell Laptop" class="w-full h-full object-cover opacity-75 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 filter grayscale group-hover:grayscale-0">
                 </div>
-                <h3 class="text-sm font-bold uppercase text-white tracking-wider">Equipos HP Pavilion / ProBook</h3>
-                <p class="text-xs text-zinc-500 mt-1">Mantenimiento de disipadores térmicos, sustitución de teclados incrustados y reballing de chipsets.</p>
+                <h3 class="text-sm font-bold uppercase text-white tracking-wider flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 bg-blue-500 rounded-full"></span> Laptops Portátiles
+                </h3>
+                <p class="text-xs text-slate-400 mt-2 leading-relaxed">Soporte completo para Dell, HP, Lenovo y más. Remoción de cortos en líneas de voltaje, flasheo externo de BIOS y reemplazo de pantallas LED.</p>
             </div>
 
-            <!-- Bloque 6: Lenovo -->
-            <div class="bg-zinc-950 border border-zinc-900 p-4 group hover:border-zinc-700 transition-colors">
-                <div class="h-64 w-full overflow-hidden flex items-center justify-center bg-zinc-900 mb-4">
-                    <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=600&q=80" alt="Lenovo Gaming Laptop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <!-- Tarjeta 6: Reconstrucción Mecánica -->
+            <div class="bg-[#08080c]/60 border border-slate-900 rounded-xl p-4 group hover:border-purple-500/40 transition-all duration-300 relative overflow-hidden backdrop-blur-md">
+                <div class="h-64 w-full overflow-hidden flex items-center justify-center bg-[#0d0d14] mb-4 rounded-lg relative">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#000000] via-purple-950/10 to-transparent z-10 opacity-60"></div>
+                    <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=600&q=80" alt="Lenovo Gaming Laptop" class="w-full h-full object-cover opacity-75 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 filter grayscale group-hover:grayscale-0">
                 </div>
-                <h3 class="text-sm font-bold uppercase text-white tracking-wider">Lenovo IdeaPad / LOQ / Legion</h3>
-                <p class="text-xs text-zinc-500 mt-1">Reconstrucción epóxica de bisagras arrancadas, ampliación avanzada de memorias RAM y SSD NVMe.</p>
+                <h3 class="text-sm font-bold uppercase text-white tracking-wider flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 bg-purple-500 rounded-full"></span> Bisagras y Estructuras
+                </h3>
+                <p class="text-xs text-slate-400 mt-2 leading-relaxed">Reconstrucción epóxica de alta resistencia para bisagras o carcasas de laptops destruidas o rotas, devolviéndoles su movilidad original.</p>
             </div>
         </div>
     </section>
 
-    <!-- CALCULADORA DE COSTOS (TOTALMENTE NEGRA) -->
-    <section id="calculadora" class="py-24 bg-zinc-950 border-y border-zinc-900">
+    <!-- COTIZADOR PREMIUM (Estilo Panel de Control) -->
+    <section id="calculadora" class="py-24 bg-[#050508]/90 border-y border-cyan-950/40 backdrop-blur-md">
         <div class="max-w-3xl mx-auto px-6">
             <div class="mb-10 text-center">
-                <h2 class="text-2xl font-extrabold uppercase text-white tracking-tight">Cotizador de Presupuestos Base</h2>
-                <p class="text-xs text-zinc-500 mt-2">Tasas estimadas sujetas a validación del circuito físico en laboratorio.</p>
+                <h2 class="text-2xl font-extrabold uppercase text-white tracking-tight">Consola de Tasación Base</h2>
+                <p class="text-xs text-cyan-500 font-mono mt-2">// VALORES ESTIMADOS SUJETOS A EVALUACIÓN FÍSICA EN TALLER</p>
             </div>
 
-            <div class="bg-black border border-zinc-900 p-6 space-y-6">
+            <div class="bg-[#09090f] border border-cyan-950/60 rounded-xl p-6 space-y-6 shadow-2xl relative">
+                <div class="absolute top-2 left-4 font-mono text-[9px] text-cyan-600">REPARACIONES_DONALDO_EDER_SYS</div>
                 <div>
-                    <label class="block text-[10px] font-bold uppercase tracking-wider text-zinc-400 mb-2">1. Categoría del Equipo</label>
-                    <select id="calc-tipo" onchange="actualizarPrecios()" class="w-full bg-zinc-950 border border-zinc-800 px-4 py-3.5 text-sm text-white focus:outline-none focus:border-zinc-600">
-                        <option value="celular">Celulares / Smartphones</option>
-                        <option value="laptop">Laptops / Computadoras de Escritorio</option>
+                    <label class="block text-[10px] font-mono font-bold uppercase tracking-widest text-slate-400 mb-2">1. Línea de Hardware</label>
+                    <select id="calc-tipo" onchange="actualizarPrecios()" class="w-full bg-[#030305] border border-slate-800 rounded-lg px-4 py-3.5 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors">
+                        <option value="dispositivo">Móviles / Tablets</option>
+                        <option value="computadora">Computadoras / Laptops / PC</option>
                     </select>
                 </div>
                 <div>
-                    <label class="block text-[10px] font-bold uppercase tracking-wider text-zinc-400 mb-2">2. Desglose del Fallo Técnico</label>
-                    <select id="calc-falla" onchange="actualizarPrecios()" class="w-full bg-zinc-950 border border-zinc-800 px-4 py-3.5 text-sm text-white focus:outline-none focus:border-zinc-600"></select>
+                    <label class="block text-[10px] font-mono font-bold uppercase tracking-widest text-slate-400 mb-2">2. Desglose de la Avería</label>
+                    <select id="calc-falla" onchange="actualizarPrecios()" class="w-full bg-[#030305] border border-slate-800 rounded-lg px-4 py-3.5 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors"></select>
                 </div>
-                <div class="p-5 bg-zinc-950 border-l-2 border-white flex justify-between items-center">
-                    <span class="text-[10px] font-bold uppercase tracking-wider text-zinc-500">Monto Base Estimado:</span>
-                    <span id="calc-total" class="text-xl font-black text-white font-mono">RD$ 0.00</span>
+                <div class="p-5 bg-gradient-to-r from-cyan-950/50 via-slate-950/40 to-transparent border-l-2 border-cyan-400 rounded-r-lg flex justify-between items-center">
+                    <span class="text-[10px] font-mono font-bold uppercase tracking-widest text-slate-400">Presupuesto Mínimo Estimado:</span>
+                    <span id="calc-total" class="text-2xl font-black text-cyan-400 font-mono tracking-tight drop-shadow-[0_0_10px_rgba(34,211,238,0.3)]">RD$ 0.00</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FORMULARIO DE ADMISIÓN (REPORTE DE INCIDENCIAS) -->
-    <section id="reportar" class="py-24 max-w-3xl mx-auto px-6">
+    <!-- FORMULARIO DE ADMISIÓN (Diseño Técnico Limpio) -->
+    <section id="reportar" class="py-24 max-w-3xl mx-auto px-6 relative">
         <div class="mb-12 text-center">
-            <h2 class="text-3xl font-extrabold uppercase tracking-tight text-white">Apertura de Ticket de Falla</h2>
-            <p class="text-xs text-zinc-500 mt-2">Rellene la ficha para procesar de inmediato el reporte hacia nuestra línea de WhatsApp.</p>
+            <h2 class="text-3xl font-black uppercase tracking-tight text-white">Consola de Tickets de Soporte</h2>
+            <p class="text-xs text-slate-500 mt-2">Envíe los parámetros del dispositivo para iniciar el reporte directamente por nuestro WhatsApp de atención.</p>
         </div>
 
-        <form id="form-reporte" onsubmit="enviarOrden(event)" class="bg-zinc-950 border border-zinc-900 p-8 space-y-6">
+        <form id="form-reporte" onsubmit="enviarOrden(event)" class="bg-[#08080c]/60 border border-slate-900 rounded-xl p-8 space-y-6 backdrop-blur-md">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="space-y-2">
-                    <label class="block text-[10px] font-bold uppercase tracking-wider text-zinc-400">Marca y Modelo Exacto</label>
-                    <input type="text" id="modelo" required placeholder="Ej: iPhone 14 Pro / Dell XPS 13" 
-                        class="w-full bg-black border border-zinc-800 px-4 py-3.5 text-white text-sm focus:outline-none focus:border-zinc-600">
+                    <label class="block text-[10px] font-mono font-bold uppercase tracking-widest text-slate-400">Tipo, Marca y Modelo del Equipo</label>
+                    <input type="text" id="modelo" required placeholder="Ej: iPhone 14 Pro / Laptop HP Pavilion" 
+                        class="w-full bg-[#030305] border border-slate-800 rounded-lg px-4 py-3.5 text-white text-sm focus:outline-none focus:border-cyan-500 transition-colors placeholder:text-slate-700">
                 </div>
                 <div class="space-y-2">
-                    <label class="block text-[10px] font-bold uppercase tracking-wider text-zinc-400">Número de Contacto</label>
+                    <label class="block text-[10px] font-mono font-bold uppercase tracking-widest text-slate-400">Número Telefónico de Contacto</label>
                     <input type="tel" id="telefono" required placeholder="Ej: 829-555-0000" 
-                        class="w-full bg-black border border-zinc-800 px-4 py-3.5 text-white text-sm focus:outline-none focus:border-zinc-600">
+                        class="w-full bg-[#030305] border border-slate-800 rounded-lg px-4 py-3.5 text-white text-sm focus:outline-none focus:border-cyan-500 transition-colors placeholder:text-slate-700">
                 </div>
             </div>
 
             <div class="space-y-2">
-                <label class="block text-[10px] font-bold uppercase tracking-wider text-zinc-400">Dirección Residencial</label>
+                <label class="block text-[10px] font-mono font-bold uppercase tracking-widest text-slate-400">Ubicación / Dirección Residencial</label>
                 <input type="text" id="direccion" required placeholder="Ej: Calle Principal #14, Santo Domingo" 
-                    class="w-full bg-black border border-zinc-800 px-4 py-3.5 text-white text-sm focus:outline-none focus:border-zinc-600">
+                    class="w-full bg-[#030305] border border-slate-800 rounded-lg px-4 py-3.5 text-white text-sm focus:outline-none focus:border-cyan-500 transition-colors placeholder:text-slate-700">
             </div>
 
             <div class="space-y-2">
-                <label class="block text-[10px] font-bold uppercase tracking-wider text-zinc-400">Descripción Completa del Problema</label>
-                <textarea id="problema" rows="5" required placeholder="Indique detalladamente los síntomas detectados en el hardware..." 
-                    class="w-full bg-black border border-zinc-800 px-4 py-3.5 text-white text-sm focus:outline-none focus:border-zinc-600 resize-none"></textarea>
+                <label class="block text-[10px] font-mono font-bold uppercase tracking-widest text-slate-400">Descripción Detallada del Problema</label>
+                <textarea id="problema" rows="5" required placeholder="Detalle qué le sucede al equipo (No enciende, pantalla rota, daño por agua, etc.)..." 
+                    class="w-full bg-[#030305] border border-slate-800 rounded-lg px-4 py-3.5 text-white text-sm focus:outline-none focus:border-cyan-500 transition-colors resize-none placeholder:text-slate-700"></textarea>
             </div>
 
-            <button type="submit" class="w-full bg-white hover:bg-zinc-200 text-black font-extrabold py-4 px-6 text-[11px] uppercase tracking-widest transition flex items-center justify-center gap-2">
-                Enviar Reporte a WhatsApp
+            <button type="submit" class="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-black py-4 px-6 text-[11px] uppercase tracking-[0.2em] transition rounded-lg shadow-[0_0_20px_rgba(34,211,238,0.15)] flex items-center justify-center gap-2">
+                Enviar Ticket a WhatsApp
             </button>
         </form>
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-black border-t border-zinc-900 py-12 text-center text-[10px] text-zinc-600 font-bold tracking-widest uppercase">
+    <footer class="bg-[#000000] border-t border-cyan-950/20 py-12 text-center text-[10px] text-slate-600 font-mono tracking-widest uppercase">
         <div class="max-w-6xl mx-auto px-6">
-            <p>&copy; 2026 TECHFIX LAB. SERVICIO TÉCNICO DE HARDWARE DE PRECISIÓN.</p>
+            <p>&copy; 2026 REPARACIONES DONALDO & EDER. SERVICIO DE HARDWARE MULTIDISPOSITIVO.</p>
         </div>
     </footer>
 
-    <!-- LOGIC SCRIPTS -->
+    <!-- CODIGO LOGICO INTEGRADO -->
     <script>
         const fallas = {
-            celular: [
+            dispositivo: [
                 { nombre: "Sustitución de Pantalla / Módulo LCD", precio: "RD$ 2,500.00" },
                 { nombre: "Cambio de Batería Original", precio: "RD$ 1,200.00" },
-                { nombre: "Reemplazo de Puerto de Carga (Tipo-C / Lightning)", precio: "RD$ 950.00" },
-                { nombre: "Fallo de Placa Base / Microsoldadura", precio: "A evaluar en taller" }
+                { nombre: "Pin o Puerto de Carga Dañado", precio: "RD$ 950.00" },
+                { nombre: "Fallo de Placa Madre / Mojado / Microsoldadura", precio: "A evaluar en taller" }
             ],
-            laptop: [
-                { nombre: "Mantenimiento Térmico Interno + Pasta Premium", precio: "RD$ 1,500.00" },
-                { nombre: "Instalación de SSD NVMe + Respaldo de Sistema", precio: "RD$ 2,800.00" },
-                { nombre: "Reconstrucción Estructural de Bisagras", precio: "RD$ 1,800.00" },
-                { nombre: "Fallo por Cortocircuito / Líneas de Voltaje", precio: "A evaluar en taller" }
+            computadora: [
+                { nombre: "Mantenimiento Térmico + Cambio de Pasta", precio: "RD$ 1,500.00" },
+                { nombre: "Instalación / Cambio de SSD + Sistema Operativo", precio: "RD$ 2,800.00" },
+                { nombre: "Reconstrucción Estructural Mecánica de Bisagras", precio: "RD$ 1,800.00" },
+                { nombre: "Fallo de Encendido / Cortocircuitos / Componentes", precio: "A evaluar en taller" }
             ]
         };
 
@@ -259,7 +320,7 @@
             document.getElementById('calc-total').innerText = this.value;
         });
 
-        // Inicialización
+        // Inicio automático del cotizador
         actualizarPrecios();
 
         function enviarOrden(event) {
@@ -272,14 +333,14 @@
 
             const numeroSoporte = "18297512496";
 
-            const mensaje = `[!] TECHFIX LAB - ORDEN DE TRABAJO\n` +
+            const mensaje = `[!] REPARACIONES DONALDO & EDER - TICKET\n` +
                             `========================================\n\n` +
-                            `▪ HARDWARE:   ${modelo}\n` +
-                            `▪ CLIENTE:    ${telefono}\n` +
-                            `▪ DIRECCIÓN:  ${direccion}\n\n` +
-                            `▪ INFORME DE FALLA:\n"${problema}"\n\n` +
+                            `▪ DISPOSITIVO: ${modelo}\n` +
+                            `▪ CONTACTO:    ${telefono}\n` +
+                            `▪ UBICACIÓN:   ${direccion}\n\n` +
+                            `▪ DETALLES DE LA FALLA:\n"${problema}"\n\n` +
                             `========================================\n` +
-                            `// Reporte generado de manera segura.`;
+                            `// Reporte recibido desde la Plataforma Web.`;
 
             window.open(`https://wa.me/${numeroSoporte}?text=${encodeURIComponent(mensaje)}`, '_blank');
         }
